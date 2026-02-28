@@ -1,4 +1,3 @@
-/* ================= FONT ================= */
 @font-face {
     font-family: 'Russo One';
     font-style: normal;
@@ -6,199 +5,359 @@
     src: local('Russo One'), url('/font/RussoOne-Regular.woff') format('woff');
 }
 
-/* ================= GLOBAL ================= */
-body { margin: 0; }
+.game-img{display:none !important;}
+.daftargame a , .daftargame p{font-size:13px;}
 
-a {
-    color: gold;
-    text-decoration: none;
+#ksTab.ks-tab{
+width:30px !important;
+border-left: solid white 1px;
+border-top: solid white 1px;
+border-bottom: solid white 1px;
 }
 
-h1,h2,h3,h4,h5,h6{
-    margin-top:0;
-    margin-bottom:.5rem;
-    color:silver;
+#ksTab , #ksPanel{top:83% !important;}
+body.overflow{overflow:hidden;}
+#ksModal .ks-dialog{border: 1px solid rgb(255 255 255 / 44%) !important;}
+.validation-error select {border-color: #d32f2f;}
+.promotion-item figcaption{display:none;}
+.navbar-fixed ul{position:unset !important;}
+.avatar-provider>.icon.pgs {background-position: -240px -120px !important;}
+
+.tab-link {padding: 10px;}
+.tab-link.active {background: #1565c0;color: white;}
+
+#modalpopup:target {opacity: 1;visibility: visible;}
+
+.content-list h5{color:black;}
+
+.modalpopup {
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.8);
+position: fixed;
+top: 0;
+left: 0;
+opacity: 0;
+visibility: hidden;
+z-index: 9999;
+transition: all .3s;
 }
 
-h1 { font-size:20px; color:#fff; }
-h2 { font-size:20px; }
-h3 { font-size:22px; }
-h6 { font-size:15px; }
-
-p{
-    margin:0;
-    color:#fff;
-    font-size:15px;
-    text-align:justify;
+#modalpopup:target .modalpopup-konten {
+opacity: 1;
+transform: translate(-50%, -50%) scale(1);
 }
 
-/* ================= WRAPPER BG ================= */
-.wrapper {
-    position: relative;
-    z-index: 1;
-    min-height: 100vh;
-    overflow: hidden;
+.modalpopup-konten {
+width: 100%;
+max-width: 500px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(.25);
+opacity: 0;
+transition: all .5s .1s;
 }
 
-.wrapper::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://server.domainaku.com/uploads/planet88/mobile/bg-mobile.webp') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-    pointer-events: none;
+.modal-dialog1 {
+border-radius: 8px;
+z-index: 100;
+border: 2px solid rgb(43 90 196) !important;
+height:500px;
 }
 
-/* ================= NAVBAR ================= */
-.navbar-fixed{
-    height:140px !important;
-    display:flex !important;
-    justify-content:space-between !important;
-    border-bottom:1px solid #ffffff24;
-    background:url("https://server.domainaku.com/uploads/planet88/new-navbar-mobile.webp") center/cover no-repeat;
+.fade {transition: opacity .15s linear;}
+
+.modal-header1 {
+padding: 3px;
+background: linear-gradient(#023d76, #021f3d) !important;
+box-shadow: rgb(0 43 85) 0px 0px 5px 2px inset, rgb(0 59 115) 0px 0px 4px 3px inset !important;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
 }
+
+.modal-dialog-close {
+color: transparent;
+position: absolute;
+right: 7px;
+width: 6%;
+top: 9px;
+}
+
+.modal-body1 {
+max-height: calc(100% - 40px);
+height: 100%;
+background: #000;
+overflow: auto;
+}
+
+.modal-body1 iframe {
+max-width: 100%;
+border: 0px;
+width: 100%;
+padding: 0px;
+margin: 0px;
+bottom:0 !important;
+height:100% !important;
+}
+
+.responsive-iframe {position: relative;width: 100%;height: 550px;}
+
+.menu-body .lang-select select{background-color: #000 !important;}
+.game-links-heading{color:#fff !important;}
+
+.menu-body li {
+border-bottom-color: #9e9e9e;
+background: linear-gradient(360deg, #1565c0, #1e88e5, #64b5f6);
+box-shadow: inset 1px -1px 3px rgb(0 0 0);
+margin-top: 5px !important;
+border-bottom:none !important;
+}
+
+.menu-body a, .menu-body i, .menu-body .lang-select select {color: #ffffff !important;}
+.menu-body {padding-bottom: 0 !important;}
+.side-nav {background: #004373 !important;z-index: 62 !important;}
+.sidenav-overlay{z-index:61 !important;}
+
+button{text-decoration: none;color: white;}
+button{background: black;border: 2px solid white;}
+
+#TopLists-panel-top-game .game-img{top:45% !important;}
+
+.frame-footer{
+display:none;
+background: black;
+background-color: rgba(0,0,0,0.7);
+height: 220px;
+width: 1200px;
+max-width: 100%;
+padding-top: 10px;
+border: 1px solid lightgreen;
+}
+
+.teks-new{font-size: 30px;margin: 0px;margin-left: 10px;}
+.newsInfo{display: none;}
+.icon_scatter{background-position: center 5px !important;}
+
+.trigger-side-show{background: transparent;border: none;margin-top: 8px;}
+.trigger-side-show img{width: 50%}
+
+.btn-account ul a.icon-btn{
+background: linear-gradient(360deg, #1565c0, #1e88e5, #64b5f6) !important;
+box-shadow: rgba(0, 0, 0, 0.33) 3px 4px 1px, rgba(0, 0, 0, 0.66) 3px 3px 4px 0px, #0d47a1 0px 0px 6px 2px inset, #42a5f5 0px 0px 5px 3px inset !important;
+color: #fff !important;
+}
+
+.black2{background-color: none !important;}
+.seo-footer>.infini-logo>img{display: none;}
+
+.bk{margin:0 0 10px;color: skyblue;}
+.bk{margin-top:0;margin-bottom:1rem;text-align:justify}
+
+.description1{margin-top: 15px !important;}
+.p5{margin-bottom: 5px;}
+.server{display: none;}
+
+.game-01, .game-02, .game-03, .game-04, .game-05, .game-06, .game-07, .game-08{display: none;}
+.akses-server{display:none;}
+
+button.tombol {padding: 5px 20px;text-decoration: none;display: inline-block;font-size: 12px;transition-duration: 0.4s;cursor: pointer;}
+
+button.tombol1 {
+background-color: #ffffff;
+color: black;
+border: 2px solid #00ccff;
+border-radius: 50px;
+margin-top: 10px;
+}
+
+button.tombol1:hover {
+background: linear-gradient(180deg,#2fc5e8 0,#1261ae 50%,#2fc5e8 110%);
+color: white;
+}
+
+.planet881{display: none;}
+.icon-samping{display:none !important;}
+
+.judul{color: Gold;margin-bottom: 0px;}
+.judul2{color: LightGreen;}
+
+a{color:gold;text-decoration: none;}
+
+h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;color:silver;}
+h1{font-size:20px;color: #fff;}
+h2{font-size:20px;}
+h3{font-size:22px;}
+h6{font-size:15px;}
+
+p{margin:0 0 10px;color: #fff;}
+p{margin-top:0;margin-bottom:1rem;text-align:center !important;text-align:justify;color: #fff;font-size: 15px;margin-top: 5px;}
+p{margin: 0;}
+
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+
+@media (min-width:1200px){
+.container{width:1000px}
+.tron-regis{margin:0 10px 0 0}
+.tron-login{margin:0 10px 0 0}
+}
+
+@media (max-width:768px){
+.logo{display:none}
+.tron-regis{margin:0 10px 0 0}
+.tron-login{margin:0 10px 0 0}
+}
+
+.game-group-front .nav-link>span{font-size: 70%;margin-bottom:5px;}
+
+table.planet88{
+font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+width:100%;
+text-align:left;
+border-collapse:collapse;
+margin:0 20px 0 0
+}
+
+table.planet88 td,table.planet88 th{border:1px solid #f78888;padding:10px 5px 10px}
+table.planet88 tbody td{font-weight:500;color:#bfbfbf}
+table.planet88 thead{background:#f78888}
+table.planet88 thead th{font-weight:700;color:#fff;text-align:center;background:radial-gradient(circle 214px at 49.5% 54.2%,#008B8B 0,#000 96%)}
+table.planet88 thead,table.planet88 thead{background:#20d308}
+table.planet88 thead th,table.planet88 thead th{font-size:15px;font-weight:700;color:#fff;text-align:center}
+table.planet88 td,table.planet88 th,.planet88 td,.planet88 th{border:1px solid #f78888}
+table.planet88 tbody td,table.planet88 tbody td{font-size:12px;font-weight:300;color:#fff}
+table td{padding:5px 8px}
+
+li a.btn-secondary-primary{width:100%;}
+li a.btn-join{width:100%;}
+
+a.btn-secondary-primary{
+border-radius: 5px;
+width: 50%;
+font-family: 'Russo One', sans-serif;
+color: white;
+margin-right: 3px;
+background-image: linear-gradient(360deg, #dee4e9, #d0dde9, #ffffff) !important;
+box-shadow: rgba(0, 0, 0, 0.33) 3px 4px 1px, rgba(0, 0, 0, 0.66) 3px 3px 4px 0px, #768397 0px 0px 6px 2px inset, #42a5f5 0px 0px 5px 3px inset !important;
+border: 1.2px solid #42a5f5 !important;
+font-size: 1.3rem;
+}
+
+a.btn-join{
+border-radius: 5px;
+width: 50%;
+font-family: 'Russo One', sans-serif;
+color: white;
+margin-right: 3px;
+background-image: linear-gradient(360deg, #1565c0, #1e88e5, #64b5f6) !important;
+box-shadow: rgba(0, 0, 0, 0.33) 3px 4px 1px, rgba(0, 0, 0, 0.66) 3px 3px 4px 0px, #0d47a1 0px 0px 6px 2px inset, #42a5f5 0px 0px 5px 3px inset !important;
+border: 1.2px solid #42a5f5 !important;
+font-size: 1.3rem;
+}
+
+.btn-account {
+height: 40px;
+align-content: center !important;
+display: flex !important;
+align-items: center;
+flex-wrap: wrap !important;
+flex-direction: column;
+margin: 10px;
+}
+
+.logo-img{display: none;}
+
+.navbar-fixed ul{margin: 10px 0 0 0px !important;}
+.navbar-fixed ul li{margin: 0 !important;}
 
 .brand-logo {
-    display:block;
-    box-sizing:border-box;
-    padding-left:150px;
-    margin-top:10px;
-    background:url(https://server.domainaku.com/uploads/planet88/logo/planet88logo.webp) no-repeat;
-    background-size:240px;
-    width:240px;
-    height:50px;
-    position:relative;
-    z-index:9;
+display: block;
+box-sizing: border-box;
+padding-left: 150px;
+margin-top: 10px;
+background: url(https://server.domainaku.com/uploads/planet88/logo/planet88logo.webp) no-repeat;
+background-size: 240px;
+width: 240px;
+height:50px;
+position: relative;
+z-index: 9;
 }
 
-/* ================= MENU ================= */
-.menu-body li {
-    background:linear-gradient(360deg,#1565c0,#1e88e5,#64b5f6);
-    box-shadow:inset 1px -1px 3px rgb(0 0 0);
-    margin-top:5px !important;
+.navbar-fixed{
+background-image:url("https://server.domainaku.com/uploads/planet88/new-navbar-mobile.webp");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 140px !important;
+display: flex !important;
+justify-content: space-between !important;
+border-bottom:1px solid #ffffff24;
 }
 
-.menu-body a,
-.menu-body i,
-.menu-body .lang-select select {
-    color:#fff !important;
+.game-front-wrapper{background: transparent !important;}
+
+button.raise{width: auto;height: 30%;margin-right: 5px;margin-bottom:5px;}
+button.raisebtn1{width: auto;height: 30%;}
+button.raisebtn2{width: auto;height: 30%;margin-left: 5px;}
+button.raisebtn3{width: auto;height: 30%;margin-left: 5px;}
+
+.p1{color:white !important;font-size: 10px;}
+
+#latestPool .item{width:50%;}
+.box-pull{zoom:70%;}
+
+.teks1{text-align:center !important;text-align:justify;color: white;font-size: 15px;margin-top: 10px;margin-bottom:0px;}
+.teks2{text-align:center !important;text-align:justify;color: skyblue;font-size: 15px;margin-top: -5px;margin-bottom:0px;}
+
+.wrapper {position: relative;z-index: 1;min-height: 100vh;overflow: hidden;}
+
+.wrapper::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url('https://server.domainaku.com/uploads/planet88/mobile/bg-mobile.webp') no-repeat center center;
+background-size: cover;
+z-index: -1;
+pointer-events: none;
 }
 
-.side-nav { background:#004373 !important; z-index:62 !important; }
-.sidenav-overlay{ z-index:61 !important; }
+body {margin: 0;}
 
-/* ================= BUTTON ================= */
-button{
-    background:black;
-    border:2px solid white;
-    color:white;
-    text-decoration:none;
+.modal21_overlay21 {position: fixed;top: 0;height: 100vh;width: 100vw;background-color: rgba(0, 0, 0, 0.5);z-index:100;}
+.modal21 {background-color: #fff;max-width: 100%;margin: 0 auto;text-align: center;padding: 20px;position: relative;top: 8%;transform: translateY(-50%);}
+.closeModal21 {display: block;margin: 0 auto;background-color: #000;color: #fff;font-size: 16px;border: none;padding: 7px 15px;border-radius: 4px;}
+
+.sub_color{background-color:transparent !important;}
+.modal{background-color:transparent !important;box-shadow: none !important;}
+.close{color:#fff !important;background-color:red !important;}
+
+#myA{
+margin-top:100px;
+padding: 10px 10px;
+background: black;
+color: greenyellow;
+border-radius: 5px;
+background:linear-gradient(180deg,#1261ae 0,#1261ae 50%,#2fc5e8 110%) !important;
+font-size:15px;
+position: absolute;
+top: 100px; left: 120px;
 }
 
-button.tombol{
-    padding:5px 20px;
-    font-size:12px;
-    transition:.4s;
-    cursor:pointer;
-}
+.game-item-list{padding-top:25px !important;}
+.jackpot-wrapper img{display:none;}
 
-button.tombol1{
-    background:#fff;
-    color:black;
-    border:2px solid #00ccff;
-    border-radius:50px;
-    margin-top:10px;
-}
-
-button.tombol1:hover{
-    background:linear-gradient(180deg,#2fc5e8 0,#1261ae 50%,#2fc5e8 110%);
-    color:white;
-}
-
-/* ================= TABLE ================= */
-table.planet88{
-    width:100%;
-    border-collapse:collapse;
-    font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
-
-table.planet88 td,
-table.planet88 th{
-    border:1px solid #f78888;
-    padding:10px 5px;
-}
-
-table.planet88 thead{
-    background:#20d308;
-}
-
-table.planet88 thead th{
-    font-size:15px;
-    font-weight:700;
-    color:#fff;
-    text-align:center;
-}
-
-/* ================= MODAL ================= */
-.modal{
-    background-color:transparent !important;
-    box-shadow:none !important;
-}
-
-.modal21_overlay21{
-    position:fixed;
-    top:0;
-    height:100vh;
-    width:100vw;
-    background-color:rgba(0,0,0,.5);
-    z-index:100;
-}
-
-.modal21{
-    background:#fff;
-    max-width:100%;
-    margin:0 auto;
-    text-align:center;
-    padding:20px;
-    position:relative;
-    top:8%;
-    transform:translateY(-50%);
-}
-
-.closeModal21{
-    background:#000;
-    color:#fff;
-    font-size:16px;
-    border:none;
-    padding:7px 15px;
-    border-radius:4px;
-}
-
-/* ================= JACKPOT ================= */
-.progressive-jackpot{
-    filter:none !important;
-    margin-top:-15px !important;
-    display:none;
-}
-
-.jackpot-wrapper span{
-    font-size:17px !important;
-    color:black;
-    padding-top:4% !important;
-}
-
-/* ================= GAME NAV ICON ================= */
-.game-group-front .nav-link>i{
-    width:90px;
-    height:56px;
-    margin:0 auto;
-    display:block;
-    background:url(https://cdn.rbtasset.com/assets/images/common/icon_nav.png) no-repeat center -182px !important;
-    background-size:60% !important;
+.game-group-front .nav-link>i {
+width:90px;
+height:56px;
+margin:0 auto;
+display:block;
+background:url(https://cdn.rbtasset.com/assets/images/common/icon_nav.png) no-repeat !important;
+background-size:60% !important;
+background-position:center -182px !important;
 }
 
 .game-group-front .nav-link>i.slot{background-position:center -47px !important}
@@ -208,3 +367,59 @@ table.planet88 thead th{
 .game-group-front .nav-link>i.sports{background-position:center -608px !important}
 .game-group-front .nav-link>i.cock_fighting{background-position:center -746px !important}
 .game-group-front .nav-link>i.games{background-position:center -679px !important}
+
+.myjackpot{display:inline  !important;}
+.progressive-jackpot>h2{display:none !important;}
+
+.jackpot-wrapper span{
+font-size:17px !important;
+color: black;
+font-family: 'Guardians', sans-serif !important;
+padding-top:4% !important;
+}
+
+.game-front-wrapper{
+background: url(https://server.domainaku.com/uploads/planet88/new-frameless.webp) !important;
+background-size: 100% 100% !important;
+}
+
+.button-collapse{
+background: url(https://server.domainaku.com/uploads/planet88/pilihan1.png);
+background-size: 100% 100%;
+width: 35px;
+height: 30px;
+}
+
+.button-collapse i{background: transparent !important;}
+
+.progressive-jackpot{filter:none !important;}
+.progressive-jackpot img{filter:none !important;}
+
+.progressive-jackpot>h2 {
+position: inline !important;
+margin-top:20px;
+margin-top: 5px  !important;
+}
+
+img.twin1{width: 10% !important;text-align: center !important;}
+img.twin2{width:10% !important;margin-left:16px;}
+img.twin3{width:10% !important;margin-left:16px;}
+img.twin4{width:10% !important;margin-left:16px;}
+img.twin5{width:10% !important;margin-left:16px;}
+
+.teks3{text-align:center !important;text-align:justify;color: #fff;font-size: 15px;margin-top: -5px;margin-bottom:0px;font-family: "Russo-One";}
+
+img.twin3,img[class~=twin5],img.twin4,img.twin1,img[class~=twin2]{width:10% !important;}
+.teks2,img.twin1{text-align:center !important;}
+img[class~=twin2],img[class~=twin5],img.twin4,img.twin3{margin-left:1pc;}
+.teks2{text-align:justify;}
+.teks2{color:#fff;}
+.teks2{font-size:.15625in;}
+.teks2{margin-bottom:5px;}
+.teks2{font-family:'Russo One', sans-serif;}
+
+.teks1{text-align:center !important;text-align:justify;color: white;font-size: 15px;margin-top: -15px;margin-bottom:5px;}
+
+.progressive-jackpot{filter:none !important;margin-top: -15px !important;display:none;}
+
+.progressive-jackpot:after{margin-top: 100px !important;}
