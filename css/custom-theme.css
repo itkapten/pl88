@@ -1,0 +1,210 @@
+/* ================= FONT ================= */
+@font-face {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Russo One'), url('/font/RussoOne-Regular.woff') format('woff');
+}
+
+/* ================= GLOBAL ================= */
+body { margin: 0; }
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top:0;
+    margin-bottom:.5rem;
+    color:silver;
+}
+
+h1 { font-size:20px; color:#fff; }
+h2 { font-size:20px; }
+h3 { font-size:22px; }
+h6 { font-size:15px; }
+
+p{
+    margin:0;
+    color:#fff;
+    font-size:15px;
+    text-align:justify;
+}
+
+/* ================= WRAPPER BG ================= */
+.wrapper {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://server.domainaku.com/uploads/planet88/mobile/bg-mobile.webp') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-fixed{
+    height:140px !important;
+    display:flex !important;
+    justify-content:space-between !important;
+    border-bottom:1px solid #ffffff24;
+    background:url("https://server.domainaku.com/uploads/planet88/new-navbar-mobile.webp") center/cover no-repeat;
+}
+
+.brand-logo {
+    display:block;
+    box-sizing:border-box;
+    padding-left:150px;
+    margin-top:10px;
+    background:url(https://server.domainaku.com/uploads/planet88/logo/planet88logo.webp) no-repeat;
+    background-size:240px;
+    width:240px;
+    height:50px;
+    position:relative;
+    z-index:9;
+}
+
+/* ================= MENU ================= */
+.menu-body li {
+    background:linear-gradient(360deg,#1565c0,#1e88e5,#64b5f6);
+    box-shadow:inset 1px -1px 3px rgb(0 0 0);
+    margin-top:5px !important;
+}
+
+.menu-body a,
+.menu-body i,
+.menu-body .lang-select select {
+    color:#fff !important;
+}
+
+.side-nav { background:#004373 !important; z-index:62 !important; }
+.sidenav-overlay{ z-index:61 !important; }
+
+/* ================= BUTTON ================= */
+button{
+    background:black;
+    border:2px solid white;
+    color:white;
+    text-decoration:none;
+}
+
+button.tombol{
+    padding:5px 20px;
+    font-size:12px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+button.tombol1{
+    background:#fff;
+    color:black;
+    border:2px solid #00ccff;
+    border-radius:50px;
+    margin-top:10px;
+}
+
+button.tombol1:hover{
+    background:linear-gradient(180deg,#2fc5e8 0,#1261ae 50%,#2fc5e8 110%);
+    color:white;
+}
+
+/* ================= TABLE ================= */
+table.planet88{
+    width:100%;
+    border-collapse:collapse;
+    font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+table.planet88 td,
+table.planet88 th{
+    border:1px solid #f78888;
+    padding:10px 5px;
+}
+
+table.planet88 thead{
+    background:#20d308;
+}
+
+table.planet88 thead th{
+    font-size:15px;
+    font-weight:700;
+    color:#fff;
+    text-align:center;
+}
+
+/* ================= MODAL ================= */
+.modal{
+    background-color:transparent !important;
+    box-shadow:none !important;
+}
+
+.modal21_overlay21{
+    position:fixed;
+    top:0;
+    height:100vh;
+    width:100vw;
+    background-color:rgba(0,0,0,.5);
+    z-index:100;
+}
+
+.modal21{
+    background:#fff;
+    max-width:100%;
+    margin:0 auto;
+    text-align:center;
+    padding:20px;
+    position:relative;
+    top:8%;
+    transform:translateY(-50%);
+}
+
+.closeModal21{
+    background:#000;
+    color:#fff;
+    font-size:16px;
+    border:none;
+    padding:7px 15px;
+    border-radius:4px;
+}
+
+/* ================= JACKPOT ================= */
+.progressive-jackpot{
+    filter:none !important;
+    margin-top:-15px !important;
+    display:none;
+}
+
+.jackpot-wrapper span{
+    font-size:17px !important;
+    color:black;
+    padding-top:4% !important;
+}
+
+/* ================= GAME NAV ICON ================= */
+.game-group-front .nav-link>i{
+    width:90px;
+    height:56px;
+    margin:0 auto;
+    display:block;
+    background:url(https://cdn.rbtasset.com/assets/images/common/icon_nav.png) no-repeat center -182px !important;
+    background-size:60% !important;
+}
+
+.game-group-front .nav-link>i.slot{background-position:center -47px !important}
+.game-group-front .nav-link>i.tembak_ikan{background-position:center -255px !important}
+.game-group-front .nav-link>i.lottery{background-position:center -325px !important}
+.game-group-front .nav-link>i.poker{background-position:center -402px !important}
+.game-group-front .nav-link>i.sports{background-position:center -608px !important}
+.game-group-front .nav-link>i.cock_fighting{background-position:center -746px !important}
+.game-group-front .nav-link>i.games{background-position:center -679px !important}
